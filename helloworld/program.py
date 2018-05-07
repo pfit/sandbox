@@ -1,9 +1,11 @@
-print('--------------------')
-print('STUPID ASS HELLO APP')
-print('--------------------')
+print('+----------------------+')
+print('|                      |')
+print('|   STUPID HELLO APP   |')
+print('|                      |')
+print('+----------------------+\n')
 
 user_name = input('What is your name? ')
 
-rude_greeting = 'that is a dumb ass name, ' + user_name
+rude_greeting = 'that is a dumb ass name, ' + user_name + '. you are dumb'
 
 print(rude_greeting)
