@@ -1,6 +1,6 @@
 print('+----------------------+')
 print('|                      |')
-print('|   STUPID HELLO APP   |')
+print('|     HELLO STUPID     |')
 print('|                      |')
 print('+----------------------+\n')
 
