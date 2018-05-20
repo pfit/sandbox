@@ -8,15 +8,15 @@ def start():
     elif answer == "no":
         print("too bad, here we go")
     else:
-        print("ok well here we go anyway")
+        print("ok whatever it's happening")
 
 
 def game():
-    number = random.randint(1, 100)
-    guess = 101
+    number = random.randint(1, 10)
+    guess = 11
     while guess != number:
-        game = input("\ni'm thinking of a number between 1 and 100\nplease take a guess: ")
-        guess = int(game)
+        user_input = input("\ni'm thinking of a number between 1 and 10\ntake a guess: ")
+        guess = int(user_input)
         if guess > number:
             print("{} is too high".format(guess))
         if guess < number:
@@ -28,5 +28,6 @@ def game():
 def main():
     start()
     game()
+
 
 main()
