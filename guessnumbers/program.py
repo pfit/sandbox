@@ -1,6 +1,11 @@
 import random
 
 
+def main():
+    start()
+    game()
+
+
 def start():
     answer = input("do you want to play a game?: ")
     if answer == "yes":
@@ -13,21 +18,16 @@ def start():
 
 def game():
     number = random.randint(1, 10)
-    guess = 11
+    guess = None
     while guess != number:
         user_input = input("\ni'm thinking of a number between 1 and 10\ntake a guess: ")
         guess = int(user_input)
         if guess > number:
             print("{} is too high".format(guess))
-        if guess < number:
+        elif guess < number:
             print("{} is too low".format(guess))
     else:
         print("wow, {} is right! you won, idiot.".format(guess))
-
-
-def main():
-    start()
-    game()
 
 
 main()

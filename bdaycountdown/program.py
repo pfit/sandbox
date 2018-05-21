@@ -1,6 +1,13 @@
 import datetime
 
 
+def main():
+    bday = get_birthday_from_user()
+    today = datetime.date.today()
+    number_of_days = compute_days_between_dates(bday, today)
+    print_birthday_information(number_of_days)
+
+
 def get_birthday_from_user():
     print("when is your birthday")
     year = int(input("year [yyyy]: "))
@@ -25,13 +32,6 @@ def print_birthday_information(days):
         print("your birthday isn\'t for {} more days, dummy.".format(days))
     else:
         print("guess you're one year closer to death.")
-
-
-def main():
-    bday = get_birthday_from_user()
-    today = datetime.date.today()
-    number_of_days = compute_days_between_dates(bday, today)
-    print_birthday_information(number_of_days)
 
 
 main()
