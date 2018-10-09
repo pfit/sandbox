@@ -239,7 +239,7 @@ pip-selfcheck.json
 ### venv ###
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
-my_env
+myenv
 
 
 # End of https://www.gitignore.io/api/osx,venv,python,pycharm
